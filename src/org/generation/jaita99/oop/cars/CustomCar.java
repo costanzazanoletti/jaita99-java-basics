@@ -7,5 +7,6 @@ public class CustomCar {
 
     System.out.println(customCar.getInfo());
 
+    Car emptyCar = new Car();
   }
 }

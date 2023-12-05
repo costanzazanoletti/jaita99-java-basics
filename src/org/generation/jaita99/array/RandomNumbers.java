@@ -11,6 +11,8 @@ public class RandomNumbers {
     int size = scanner.nextInt();
     // creo una variabile di tipo Random
     Random randomGenerator = new Random();
+
+
     // creo un array di interi vuoto
     int[] randomNumbers = new int[size]; // array vuoto di tante posizioni quante mi ha detto l'utente
     // stampo l'array appena creato

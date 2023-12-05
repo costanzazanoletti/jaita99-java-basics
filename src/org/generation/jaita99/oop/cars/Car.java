@@ -17,18 +17,24 @@ public class Car {
   // costruttore con parametri
 
 
-  public Car(String color, int numberOfAirbags, boolean isHybrid) {
+  Car(String color, int numberOfAirbags, boolean isHybrid) {
     this.color = color;
     this.numberOfAirbags = numberOfAirbags;
     this.isHybrid = isHybrid;
   }
 
   // METODI
-  void defineOptionals(String colorOptional,int numberOfAirbagsOptional, boolean isHybridOptional){
+  void defineOptionals(String color,int numberOfAirbagsOptional, boolean isHybridOptional){
     // prendo i valori dei parametri e li assegno agli attributi dell'oggetto
-    color = colorOptional;
+    this.color = color;
     numberOfAirbags = numberOfAirbagsOptional;
     isHybrid = isHybridOptional;
+  }
+
+  void defineOptionals(int numberOfAirbags, boolean isHybrid){
+    color = "white";
+    this.numberOfAirbags = numberOfAirbags;
+    this.isHybrid = isHybrid;
   }
 
   String getInfo(){

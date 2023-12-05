@@ -14,7 +14,7 @@ public class Main {
  /*   superCar.color = "gold";
     superCar.numberOfAirbags = 10;
     superCar.isHybrid = false;*/
-    superCar.defineOptionals("gold", 10, false );
+    superCar.defineOptionals( 10, false );
 
     /*System.out.println("Color: " + superCar.color);
     System.out.println("Number of airbags: " + superCar.numberOfAirbags);
