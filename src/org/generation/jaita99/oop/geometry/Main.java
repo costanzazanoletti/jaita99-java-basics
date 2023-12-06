@@ -15,7 +15,7 @@ public class Main {
     Rectangle userRectangle = new Rectangle(baseInput, heightInput);
 
 
-
+    Rectangle copyRectangle = new Rectangle(userRectangle.getBase(), userRectangle.getHeight());
     //userRectangle.base = -5;
 
     System.out.println("Perimeter: " + userRectangle.getPerimeter());

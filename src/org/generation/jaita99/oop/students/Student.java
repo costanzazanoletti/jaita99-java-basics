@@ -13,6 +13,8 @@ public class Student {
   private String email;
   private LocalDate dateOfBirth;
 
+  private Address address;
+
   // COSTRUTTORI
 
   public Student(String firstName, String lastName, String email, LocalDate dateOfBirth) {
@@ -38,6 +40,14 @@ public class Student {
 
   public LocalDate getDateOfBirth() {
     return dateOfBirth;
+  }
+
+  public Address getAddress() {
+    return address;
+  }
+
+  public void setAddress(Address address) {
+    this.address = address;
   }
 
   // METODI

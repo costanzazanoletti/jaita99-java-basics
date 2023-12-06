@@ -29,6 +29,16 @@ public class GenerateClass {
       LocalDate dob = LocalDate.parse(dobString);
       // creo lo studente
       Student student = new Student(firstName, lastName, email, dob);
+      // chiedo i campi dell'indirizzo
+      System.out.println("Address info");
+      System.out.print("Street: ");
+      String street = scanner.nextLine();
+      System.out.print("Number: ");
+      int number = Integer.parseInt(scanner.nextLine());
+      System.out.print("City: ");
+      String city = scanner.nextLine();
+      Address address = new Address(street, number, city);
+      student.setAddress(address);
       // aggiungo lo studente alla posizione i dell'array
       students[i] = student;
     }
@@ -37,7 +47,7 @@ public class GenerateClass {
     System.out.println("Class list");
     for (int i = 0; i < students.length; i++) {
       // stampo nome completo ed età dello studente corrente
-      System.out.println(students[i].getFullName() + " " + students[i].getAge(currentYear));
+      System.out.println(students[i].getFullName() + " " + students[i].getAge(currentYear) + " " + students[i].getAddress().toString()) ;
     }
 
 
