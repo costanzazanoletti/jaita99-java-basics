@@ -38,6 +38,10 @@ public class SetExample {
 
     System.out.println(guests);
 
+    for(String element : guests){
+      System.out.println(element.toUpperCase());
+    }
+
     scanner.close();
   }
 }
