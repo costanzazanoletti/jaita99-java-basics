@@ -7,6 +7,9 @@ public class ExceptionExample {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
 
+
+
+
     System.out.println("Insert a number");
     try {
       int number = scanner.nextInt();
