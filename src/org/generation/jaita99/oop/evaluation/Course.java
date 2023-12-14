@@ -1,6 +1,7 @@
 package org.generation.jaita99.oop.evaluation;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Course {
@@ -11,7 +12,7 @@ public class Course {
   // COSTRUTTORI
   public Course(String name) {
     this.name = name;
-    this.students = new ArrayList<>();
+    this.students = new LinkedList<>();
   }
 
   // METODI
